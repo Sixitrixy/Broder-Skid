@@ -148,7 +148,7 @@ void breathingEffect() {
   else          { breathVal -= 5; if (breathVal <= 60)  breathUp = true;  }
 }
 
-bool touched() { return tft.getTouch(&tx, &ty); }
+bool touched() { return false; }
 
 bool inBox(int x, int y, int w, int h) {
   return tx >= (uint16_t)x && tx <= (uint16_t)(x+w) &&
